@@ -1,0 +1,13 @@
+set key left
+
+set style line 1 lc rgb 'blue' lt 1 lw 2 pt 7  ps 0.5       # --- blue
+set style line 2 lc rgb 'red' lt 1 lw 1.5 pt 7 ps 0.5       # --- red
+set style line 3 lc rgb '#008000' lt 1 lw 1.5 pt 7 ps 0.5   # --- green
+set style line 4 lc rgb '#00BFFF' lt 1 lw 1.5 pt 7 ps 0.5   # --- blue light
+set style line 5 lc rgb '#90EE90' lt 1 lw 1.5 pt 7 ps 0.5   # --- green light
+set style line 6 lc rgb '#FF0099' lt 1 lw 1.5 pt 7 ps 0.5   # --- magenta
+set style line 7 lc rgb '#9900FF' lt 1 lw 1.5 pt 7 ps 0.5   # --- purple
+
+set grid xtics ytics
+
+set terminal pdf font 'Helvetica,10'
