@@ -1,6 +1,6 @@
 # Makefile to build vsock graphs
 
-FIGS :=
+FIGS := pdf/vsock-perf-patches-h2g.pdf
 
 .PHONY: clean clean-all-pdf
 
