@@ -1,16 +1,23 @@
 # Makefile to build vsock graphs
 
-FIGS := pdf/vsock-perf-patches-h2g.pdf
+GRAPHS += vsock-perf-patches-h2g vsock-perf-patches-h2g-zoom
 
-.PHONY: clean clean-all-pdf
+PDFS := $(addprefix pdf/, $(addsuffix .pdf, $(GRAPHS)))
+PNGS := $(addprefix png/, $(addsuffix .png, $(GRAPHS)))
 
-all: $(FIGS)
+.PHONY: clean clean-all-pdf all png
+
+all: pdf png
+
+pdf: $(PDFS)
+
+png: pdf $(PNGS)
 
 pdf/%.pdf: %.plot data/%.dat *.plot.in
 	gnuplot $*.plot
 
-clean:
-	rm $(FIGS)
+png/%.png: pdf/%.pdf
+	pdftoppm -png -r 300 -singlefile pdf/$*.pdf png/$*
 
-clean-all-pdf:
-	rm pdf/*.pdf
+clean:
+	-rm $(PDFS) $(PNGS)
