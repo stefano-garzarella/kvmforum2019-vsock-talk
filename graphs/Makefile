@@ -2,6 +2,7 @@
 
 GRAPHS += vsock-perf-patches-h2g vsock-perf-patches-h2g-zoom
 GRAPHS += vsock-perf-patches-g2h vsock-perf-patches-g2h-zoom
+GRAPHS += vsock-perf-patches-h2g-eff vsock-perf-patches-g2h-eff
 
 PDFS := $(addprefix pdf/, $(addsuffix .pdf, $(GRAPHS)))
 PNGS := $(addprefix png/, $(addsuffix .png, $(GRAPHS)))
