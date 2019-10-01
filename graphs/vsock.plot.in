@@ -1,4 +1,4 @@
-set key left
+set key top left Left reverse
 
 set style line 1 lc rgb 'blue' lt 1 lw 2 pt 7  ps 0.5       # --- blue
 set style line 2 lc rgb 'red' lt 1 lw 1.5 pt 7 ps 0.5       # --- red
