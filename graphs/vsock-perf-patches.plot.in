@@ -1,7 +1,12 @@
-set xlabel "Packet size [bytes]"
+set xlabel "User send() size [bytes]"
 set ylabel "Throughput [Gbps]"
 
 #set ytics 2
 #set yrange [0:26]
 set logscale x 2
 set format x '%.0s%c'
+
+title1 = "before opt."
+title2 = "patch 1: extra copy for small packets"
+title3 = "patches 1+2+3: reduce credit update messages"
+title4 = "patches 1+2+3+4+5: allow up to 64KB messages queued"
