@@ -3,6 +3,7 @@
 GRAPHS += vsock-perf-patches-h2g vsock-perf-patches-h2g-zoom
 GRAPHS += vsock-perf-patches-g2h vsock-perf-patches-g2h-zoom
 GRAPHS += vsock-perf-patches-h2g-eff vsock-perf-patches-g2h-eff
+GRAPHS += vsock-perf-patches-h2g-eff-zoom vsock-perf-patches-g2h-eff-zoom
 GRAPHS += vsock-commits-year
 
 PDFS := $(addprefix pdf/, $(addsuffix .pdf, $(GRAPHS)))
